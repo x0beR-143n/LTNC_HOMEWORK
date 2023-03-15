@@ -1,0 +1,25 @@
+BT07-B
+1,
+Output doan code la:
+*p3 = B, p3 = 0x5678
+*p3 = A, p3 = 0x1234
+*p1 = B, p1 = 0x1234
+2,
+int *p; 
+int i;  
+int k;  
+i = 4;  
+k = i;  
+p = &i;
+
+k = 5;  (1)
+*k = 5;  (2)
+p = 5;   (3)
+*p = 5;  (4)
+
+Cac lenh gan cho i gia tri 5 la lenh: 1 va lenh 3
+
+3, 
+char c = ‘C';
+double *p = &c;
+-Con trỏ được khai báo là kiểu double nhưng lại được trỏ đến địa chỉ của 1 biến kiểu char.
